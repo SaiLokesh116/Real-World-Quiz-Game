@@ -25,7 +25,7 @@ Clone the repository:
 
 #bash
 ->Run
-      git clone https://github.com/yourusername/real-world-quiz-game.git
+      git clone https://github.com/SaiLokesh116/real-world-quiz-game.git
 Navigate to the project directory:
 
 #bash
