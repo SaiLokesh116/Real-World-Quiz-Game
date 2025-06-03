@@ -86,7 +86,6 @@
     text-shadow: 0 1px 3px rgba(0,0,0,0.2);
   }
 
-  /* Container for quiz */
   .container {
     background: rgba(17, 24, 39, 0.9);
     padding: 30px 40px;
@@ -453,7 +452,7 @@
           timerEl.textContent = timeLeft;
           if (timeLeft <= 0) {
             clearInterval(timer);
-            revealAnswer(-1); // Timeout, no answer
+            revealAnswer(-1); 
           }
         }, 1000);
       }
@@ -506,7 +505,6 @@
           scoreEl.textContent = score;
         }
 
-        // Wait 2 seconds then load next question
         setTimeout(() => {
           currentQuestionIndex++;
           loadQuestion();
@@ -621,10 +619,8 @@
       }
 
       function downloadCertificate() {
-        // Temporarily hide cert-buttons to not appear in image
         certButtonsDiv.style.display = 'none';
 
-        // Show name text span and hide input for clean capture
         if (certNameInput.style.display !== 'none') {
           finalizeNameInput();
         }
